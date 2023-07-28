@@ -2,19 +2,20 @@
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
    
+    $tipo_documento = $_POST["tipo_documento"];
+    $numero_documento = $_POST["numero_documento"];
     $nombre = $_POST["nombre"];
-    $apellido = $_POST["apellido"];
-    $email = $_POST["email"];
-    $password = $_POST["contraseña"];
-
-
-   
+    $apellidos = $_POST["apellidos"];
+    $correo = $_POST["correo"];
+    $telefono = $_POST["telefono"];
+    $rol = $_POST["rol"];
 
 
     require_once "db.php";
 
 
-    $sql = "INSERT INTO register (nombre, apellido, email, contraseña) VALUES ('$nombre', '$apellido', '$email', '$password')";
+    $sql = "INSERT INTO register (tipo_documento, numero_documento, nombre, apellidos, correo, telefono, rol) 
+    VALUES ('$tipo_documento', '$numero_documento','$nombre','$apellidos','$correo','$telefono','$rol')";
 
     if ($conn->query($sql) === TRUE) {
   
