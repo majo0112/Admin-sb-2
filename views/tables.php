@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang='es'>
 
@@ -53,7 +54,7 @@
                     </div>
                     <div class='card mb-4 row'>
                         <div class='card-body'>
-                            <form action="/php/registro.php" method="post">
+                            <form action="../php/registro.php" method="post">
                                 <div class='row'>
                                     <div class='col col-lg-6'>
                                         <label for='tipoDocumento'>Tipo de documento</label>

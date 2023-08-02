@@ -35,7 +35,7 @@
                                                     }
                                                 }
                                                 ?>
-                                            <form action="/php/validacion.php" method="post">
+                                            <form action="../php/validacion.php" method="post">
                                                 <div class="form-floating mb-3">
                                                     <input class="form-control" id="inputEmail" type="email" name="email" placeholder="name@example.com" />
                                                     <label for="inputEmail">Email address</label>
@@ -43,6 +43,13 @@
                                                 <div class="form-floating mb-3">
                                                     <input class="form-control" id="inputPassword" type="password" name="password" placeholder="Password" />
                                                     <label for="inputPassword">Password</label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <select class="form-select" aria-label="Default select example" name="rol">
+                                                        <option selected>Tipo de rol</option>
+                                                        <option value="administrador">Administrator</option>
+                                                        <option value="aprendiz">Aprendiz</option>                                                        
+                                                    </select>
                                                 </div>
                                                 <div class="form-check mb-3">
                                                     <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
