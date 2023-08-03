@@ -1,5 +1,5 @@
 <?php
-// Incluir el archivo permisos.php para verificar la sesión del usuario
+
 include '../comunes/permisos.php';
 ?>
 
