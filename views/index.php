@@ -1,17 +1,7 @@
-/*?php
-
-session_start();
-
-if (!isset($_SESSION['users'])) {
-    
-}
-
-session_destroy();
-
-    header('location: login.php');
-    exit; 
-
-?> */
+<?php
+// Incluir el archivo permisos.php para verificar la sesión del usuario
+include '../comunes/permisos.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -128,7 +118,7 @@ session_destroy();
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Charts
                             </a>
-                            <a class="nav-link" href="tables.php">
+                            <a class="nav-link" href="../views/tables.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tables
                             </a>

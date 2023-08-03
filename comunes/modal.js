@@ -18,7 +18,7 @@
        
         logoutConfirmButton.addEventListener('click', function () {
           
-            window.location.href = '../views/login.php';
+            window.location.href = '../comunes/logout.php';
         });
     });
 

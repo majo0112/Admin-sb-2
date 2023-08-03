@@ -1,4 +1,7 @@
-
+<?php
+// Incluir el archivo permisos.php para verificar la sesión del usuario
+include '../comunes/permisos.php';
+?>
 <!DOCTYPE html>
 <html lang='es'>
 
@@ -38,7 +41,7 @@
             <nav class='sb-sidenav accordion sb-sidenav-dark' id='sidenavAccordion'>
                 <div class='sb-sidenav-menu'>
                     <nav class='nav'>
-                        <a class='nav-link' href='../views/index.html'>
+                        <a class='nav-link' href='../views/index.php'>
                             <div class='sb-nav-link-icon'><i class='fas fa-tachometer-alt'></i></div>
                             Inicio
                         </a>
