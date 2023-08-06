@@ -5,10 +5,8 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $rol = $_POST['rol'];
 
-
 $email = $conn->real_escape_string($email);
 $rol = $conn->real_escape_string($rol);
-
 
 $sql = "SELECT * FROM users WHERE email='$email' AND rol='$rol'";
 $result = $conn->query($sql);
@@ -17,8 +15,10 @@ if ($result->num_rows == 1) {
     $row = $result->fetch_assoc();
   
     if (password_verify($password, $row['password'])) {
+      
+        session_start();
+        $_SESSION['email'] = $email;
     
-        
         header("Location: ../views/index.php");
         exit();
     } else {
@@ -32,5 +32,6 @@ if ($result->num_rows == 1) {
 
 $conn->close();
 ?>
+
 
 

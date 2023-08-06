@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,21 +20,10 @@
                                     <div class="card shadow-lg border-0 rounded-lg mt-5">
                                         <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                         <div class="card-body">
-                                        <?php
-                                                // Alerta
-                                                if (isset($_GET['error'])) {
-                                                    $errorMessage = "";
-                                                    if ($_GET['error'] == 1) {
-                                                        $errorMessage = "¡Contraseña incorrecta!";
-                                                    } elseif ($_GET['error'] == 2) {
-                                                        $errorMessage = "¡Usuario no encontrado!";
-                                                    }
+                                            <?php
 
-                                                    if ($errorMessage !== "") {
-                                                        echo '<div class="alert alert-light" role="alert">' . $errorMessage . '</div>';
-                                                    }
-                                                }
-                                                ?>
+                                            include '../comunes/alertas.php';
+                                            ?>
                                             <form action="../php/validacion.php" method="post">
                                                 <div class="form-floating mb-3">
                                                     <input class="form-control" id="inputEmail" type="email" name="email" placeholder="name@example.com" />

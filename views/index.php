@@ -4,7 +4,7 @@ include '../comunes/permisos.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -97,7 +97,7 @@ include '../comunes/permisos.php';
                                         <nav class="sb-sidenav-menu-nested nav">
                                             <a class="nav-link" href="login.html">Login</a>
                                             <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                            <a class="nav-link" href="../views/contraseña.php">Forgot Password</a>
                                         </nav>
                                     </div>
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">

@@ -53,6 +53,10 @@
                     </div>
                     <div class='card mb-4 row'>
                         <div class='card-body'>
+                                <?php
+
+                                include '../comunes/alertas.php';
+                                ?>
                             <form action="../php/cambiar_contraseña.php" method="post">
                                 <div class='row'>
                                     <div class='col col-lg-6'>

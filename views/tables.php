@@ -2,6 +2,7 @@
 
 include '../comunes/permisos.php';
 ?>
+
 <!DOCTYPE html>
 <html lang='es'>
 
