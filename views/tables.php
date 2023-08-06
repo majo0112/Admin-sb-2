@@ -5,7 +5,6 @@ include '../comunes/permisos.php';
 
 <!DOCTYPE html>
 <html lang='es'>
-
 <head>
     <meta charset='utf-8' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
@@ -17,26 +16,48 @@ include '../comunes/permisos.php';
     <link href='../css/styles.css' rel='stylesheet' />
     <script src='https://use.fontawesome.com/releases/v6.3.0/js/all.js' crossorigin='anonymous'></script>
 </head>
-
-<body class='sb-nav-fixed'>
-    <nav class='sb-topnav navbar navbar-expand navbar-dark bg-dark'>
-        <button class='btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0' id='sidebarToggle' href='#!'>
-            <i class='fas fa-bars'></i>
-        </button>
-        <div class='d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0'></div>
-        <ul class='navbar-nav ms-auto ms-md-0 me-3 me-lg-4'>
-            <li class='nav-item dropdown'>
-                <a class='nav-link dropdown-toggle' id='navbarDropdown' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
-                    <i class='fas fa-user fa-fw'></i>
-                </a>
-                <ul class='dropdown-menu dropdown-menu-end' aria-labelledby='navbarDropdown'>
-                    <li>
-                        <a class='dropdown-item' href='php/logout.php'>Cerrar sesión</a>
+<body class="sb-nav-fixed">
+                <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+                <!-- Navbar Brand-->
+                <a class="navbar-brand ps-3" href="../views/index.php"><?php echo $_SESSION['email']; ?></a>
+                <!-- Sidebar Toggle-->
+                <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+                <!-- Navbar Search-->
+                <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                        <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+                <!-- Navbar-->
+                <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#" id="logoutButton">Cerrar sesión</a></li>
+                        </ul>
                     </li>
                 </ul>
-            </li>
-        </ul>
-    </nav>
+            </nav>
+      <!-- Modal -->
+      <div class="modal" id="logoutModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Confirmar Cierre de Sesión</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>¿Estás seguro de que deseas cerrar sesión?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" id="logoutConfirmButton">Cerrar sesión</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     <div id='layoutSidenav'>
         <div id='layoutSidenav_nav'>
             <nav class='sb-sidenav accordion sb-sidenav-dark' id='sidenavAccordion'>
@@ -174,28 +195,7 @@ include '../comunes/permisos.php';
 
                                     <?php
 
-                                        require_once "../php/db.php";
-
-                                        $sql = "SELECT * FROM register ORDER BY nombre DESC";
-                                        $result = $conn->query($sql);
-
-                                        if ($result->num_rows > 0) {
-                                            while ($row = $result->fetch_assoc()) {
-                                                echo "<tr>";
-                                                echo "<td>" . $row['tipo_documento'] . "</td>";
-                                                echo "<td>" . $row['numero_documento'] . "</td>";
-                                                echo "<td>" . $row['nombre'] . "</td>";
-                                                echo "<td>" . $row['apellidos'] . "</td>";
-                                                echo "<td>" . $row['correo'] . "</td>";
-                                                echo "<td>" . $row['telefono'] . "</td>";
-                                                echo "<td>" . $row['rol'] . "</td>";
-                                                echo "</tr>";
-                                            }
-                                        } else {
-                                            echo "<tr><td colspan='4'>No hay registros</td></tr>";
-                                        }
-
-                                        $conn->close();
+                                        include '../php/registro-de-usuarios.php';
                                     ?>
                                 </tbody>
                             </table>
@@ -210,6 +210,7 @@ include '../comunes/permisos.php';
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js' crossorigin='anonymous'></script>
     <script src='https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js' crossorigin='anonymous'></script>
     <script src='../js/datatables-simple-demo.js'></script>
+    <script src="../comunes/modal.js"></script>
 </body>
 </html>
 

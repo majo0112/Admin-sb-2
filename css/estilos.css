@@ -1,0 +1,52 @@
+
+
+body.login-page {
+    background-color: #fff; 
+}
+
+.background-container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 20s infinite;
+}
+
+@keyframes changeBackground {
+    0%, 100% {
+        background-image: url('../assets/img/fondo1.jpeg'); 
+    }
+    50% {
+        background-image: url('../assets/img/fondo2.jpg'); 
+    }
+}
+
+.logo-image {
+    width: 80px; 
+    height: auto; 
+}
+
+
+.form-control:focus {
+    border-color: #08ac04;
+    box-shadow:none; 
+    outline: 0; 
+}
+
+
+.form-select:focus {
+    border-color: #08ac04; 
+    box-shadow: none; 
+    outline: 0; 
+}
+
+
+.btn {
+    background-color: #08ac04; 
+    border-color: #08ac04; 
+    color: #ffffff; 
+}
+
+
+
+

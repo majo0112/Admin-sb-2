@@ -8,9 +8,10 @@
         <meta name="author" content="" />
         <title>Login - SB Admin</title>
         <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/estilos.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
-            <body class="bg-primary">
+            <body class="login-page background-container">
             <div id="layoutAuthentication">
                 <div id="layoutAuthentication_content">
                     <main>
@@ -18,7 +19,9 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-5">
                                     <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                        <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
+                                     <div class="card-header text-center">
+                                        <img src="../assets/img/logoSena.png" alt="Logo" class="logo-image">
+                                     </div>
                                         <div class="card-body">
                                             <?php
 
