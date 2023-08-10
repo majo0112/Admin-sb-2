@@ -29,32 +29,22 @@
                                             ?>
                                             <form action="../php/validacion.php" method="post">
                                                 <div class="form-floating mb-3">
-                                                    <input class="form-control" id="inputEmail" type="email" name="email" placeholder="name@example.com" />
-                                                    <label for="inputEmail">Email address</label>
+                                                    <input class="form-control" id="inputEmail" type="email" name="correo" placeholder="name@example.com" />
+                                                    <label for="inputEmail">Correo electrónico</label>
                                                 </div>
                                                 <div class="form-floating mb-3">
                                                     <input class="form-control" id="inputPassword" type="password" name="password" placeholder="Password" />
-                                                    <label for="inputPassword">Password</label>
-                                                </div>
-                                                <div class="form-floating mb-3">
-                                                    <select class="form-select" aria-label="Default select example" name="rol">
-                                                        <option selected>Tipo de rol</option>
-                                                        <option value="administrador">Administrator</option>
-                                                        <option value="aprendiz">Aprendiz</option>                                                        
-                                                    </select>
+                                                    <label for="inputPassword">Contraseña</label>
                                                 </div>
                                                 <div class="form-check mb-3">
                                                     <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
-                                                    <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
+                                                    <label class="form-check-label" for="inputRememberPassword">Recordar contraseña</label>
                                                 </div>
                                                 <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                    <a class="small" href="password.html">Forgot Password?</a>
-                                                    <button type="submit" class="btn btn-primary">Login</button>
+                                                    <a class="small" href="password.html">¿Olvidaste tu contraseña?</a>
+                                                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
                                                 </div>
                                             </form>
-                                        </div>
-                                        <div class="card-footer text-center py-3">
-                                            <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
                                         </div>
                                     </div>
                                 </div>

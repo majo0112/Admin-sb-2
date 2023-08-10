@@ -9,23 +9,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $correo = $_POST["correo"];
     $telefono = $_POST["telefono"];
     $rol = $_POST["rol"];
+    $password = $_POST["password"];
 
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     require_once "db.php";
 
-
-    $sql = "INSERT INTO register (tipo_documento, numero_documento, nombre, apellidos, correo, telefono, rol) 
-    VALUES ('$tipo_documento', '$numero_documento','$nombre','$apellidos','$correo','$telefono','$rol')";
+    $sql = "INSERT INTO register (tipo_documento, numero_documento, nombre, apellidos, correo, telefono, rol, password) 
+    VALUES ('$tipo_documento', '$numero_documento','$nombre','$apellidos','$correo','$telefono','$rol', '$hashedPassword')";
 
     if ($conn->query($sql) === TRUE) {
-  
         header("Location: ../views/tables.php");
         exit();
     } else {
-      
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
     $conn->close();
 }
 ?>
+

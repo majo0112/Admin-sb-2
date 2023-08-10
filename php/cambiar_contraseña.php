@@ -18,10 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
    
-    $email = $_SESSION['email'];
+    $correo = $_SESSION['correo'];
 
    
-    $sql = "SELECT password FROM users WHERE email='$email'";
+    $sql = "SELECT password FROM register WHERE correo='$correo'";
     $result = $conn->query($sql);
 
     if ($result->num_rows == 1) {
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $nuevaContraseñaHash = password_hash($nuevaContraseña, PASSWORD_DEFAULT);
 
             
-            $sqlUpdate = "UPDATE users SET password='$nuevaContraseñaHash' WHERE email='$email'";
+            $sqlUpdate = "UPDATE register SET password='$nuevaContraseñaHash' WHERE correo='$correo'";
             if ($conn->query($sqlUpdate) === TRUE) {
                 echo '<div class="alert alert-success" role="alert">Contraseña cambiada exitosamente.</div>';
                 header("Location: ../views/index.php?mensaje=contraseña_cambiada");
