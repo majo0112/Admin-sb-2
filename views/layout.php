@@ -12,6 +12,10 @@
 <link href="../css/estilos-index.css" rel="stylesheet" />
 <link href="../css/styles.css" rel="stylesheet" />
 <link href="../css/estilos.css" rel="stylesheet" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+<link rel="manifest" href="../assets/img/site.webmanifest">
 <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body class="sb-nav-fixed">
