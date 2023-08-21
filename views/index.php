@@ -6,7 +6,7 @@ $title = "SENA | Servicio Nacional de Aprendizaje";
 ob_start(); 
 ?>
     <div class="container-fluid px-4">
-        <h1>BIENVENIDO</h1>
+        <h1 class="fw-bold">Hola, <?php echo $_SESSION ['nombre']; ?>.</h1>
         <h2>EST IPSAM</h2>
         <P>Lorem ipsum dolor sit amet. Eos earum quam qui necessitatibus quasi quo sint facilis aut totam maxime qui minima corporis.<P>
         <ul>

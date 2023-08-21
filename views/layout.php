@@ -9,12 +9,13 @@
 <meta name="author" content="" />
 <title><?php echo $title; ?></title>
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-<link href="../css/estilos-index.css" rel="stylesheet" />
+<link href="../css/estilos-layout.css" rel="stylesheet" />
 <link href="../css/styles.css" rel="stylesheet" />
 <link href="../css/estilos.css" rel="stylesheet" />
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Roboto:wght@300;200;100&display=swap" rel="stylesheet">
 <link rel="manifest" href="../assets/img/site.webmanifest">
 <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
@@ -31,14 +32,13 @@
                 <!-- Navbar Search-->
                 <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                     <div class="input-group">
-
                     </div>
                 </form>
                 <!-- Navbar-->
                 <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span style="margin-left: 20px;"><?php echo $_SESSION ['nombre']; ?></span>
+                        <span  class="fw-normal fs-5" style="margin-left: 20px;"><?php echo $_SESSION ['nombre']; ?></span>
                         <i class="fas fa-user fa-fw"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -82,19 +82,16 @@
                 <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">
-                            </div>
-                            <a class="nav-link" href="../views/curso.php">
+                            <a class="nav-link text-secondary mt-5" href="../views/curso.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
                                 Cursos
                             </a>
-                            <a class="nav-link" href="../views/tables.php">
+                            <a class="nav-link  text-secondary mt-1" href="../views/tables.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
                                Usuarios
                             </a>
                         </div>
-                    </div>
-                    
+                    </div>                  
                 </nav>
             </div>
         
@@ -122,6 +119,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src='../js/scripts.js'></script>
+    <script src='../js/nava-link.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     <script src="assets/demo/chart-area-demo.js"></script>
     <script src="assets/demo/chart-bar-demo.js"></script>

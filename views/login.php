@@ -36,7 +36,7 @@
                                 <label for="inputPassword">Contraseña*</label>
                             </div>
                             <div class="d-flex align-items-center justify-content-center mt-4 mb-0 ">
-                                <button type="submit" class="btn btn-success w-100">Ingresar</button>
+                                <button type="submit" class="btn btn-success fs-5 w-100">Ingresar</button>
                             </div>
                             <div class="d-flex align-items-center justify-content-center mt-4 mb-0">
                                 <a class="small" href="password.html">¿Olvidaste tu contraseña?</a>
