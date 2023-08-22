@@ -1,5 +1,3 @@
-
-
     
     document.addEventListener('DOMContentLoaded', function () {
        
@@ -23,7 +21,6 @@
     });
 
     
-
 
 
 

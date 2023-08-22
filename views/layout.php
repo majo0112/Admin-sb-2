@@ -9,6 +9,7 @@
 <meta name="author" content="" />
 <title><?php echo $title; ?></title>
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+NYO3d6Fq5l/T5j97l2tD+bXB7f5LO3IBwq3vz5Cr4OJ2FjC" crossorigin="anonymous">
 <link href="../css/estilos-layout.css" rel="stylesheet" />
 <link href="../css/styles.css" rel="stylesheet" />
 <link href="../css/estilos.css" rel="stylesheet" />
@@ -118,14 +119,17 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-4zjF5n5m8r5l5r5u6f5v5f5F5S5B5I5F5V5U5o5T5o5D5r5u5O5N5" crossorigin="anonymous"></script>
     <script src='../js/scripts.js'></script>
     <script src='../js/nava-link.js'></script>
+    <script src='../js/datatables.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     <script src="assets/demo/chart-area-demo.js"></script>
     <script src="assets/demo/chart-bar-demo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src='../js/datatables-simple-demo.js'></script>
     <script src="../comunes/modal.js"></script>
+    <script src="../comunes/modal-editar.js"></script>
 </body>
 </html>
 
