@@ -10,7 +10,6 @@
 <title><?php echo $title; ?></title>
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+NYO3d6Fq5l/T5j97l2tD+bXB7f5LO3IBwq3vz5Cr4OJ2FjC" crossorigin="anonymous">
-<link href="../css/estilos-layout.css" rel="stylesheet" />
 <link href="../css/styles.css" rel="stylesheet" />
 <link href="../css/estilos.css" rel="stylesheet" />
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
@@ -29,7 +28,7 @@
         <img src="../assets/img/logo.png" alt="Logo" width="100" height="auto" class="ms-5">
         </a>  
       <!-- Sidebar Toggle-->
-      <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+      <button class="btn btn-light btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!" style="color: #08ac04 ;"><i class="fas fa-bars"></i></button>
                 <!-- Navbar Search-->
                 <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                     <div class="input-group">
@@ -59,24 +58,66 @@
                     </li>
                 </ul>
             </nav>
-            <!-- Modal -->
+
+
+            <!-- Modal Cerrar sesión -->
             <div class="modal" id="logoutModal" tabindex="-1">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Confirmar Cierre de Sesión</h5>
+                            <h5 class="modal-title">Cerrar Sesión</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-center">
                             <p>¿Estás seguro de que deseas cerrar sesión?</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary" id="logoutConfirmButton">Cerrar sesión</button>
+                            <button type="button" class="btn btn-secondary btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary btn-cerrar" id="logoutConfirmButton">Cerrar sesión</button>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <!-- Modal delete usuario -->
+            <div class="modal" id="deleteModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Eliminar Usuario</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>¿Estás seguro de que deseas eliminar este usuario?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-danger" id="deleteConfirmButton">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    <!-- Modal delete curso -->
+            <div class="modal" id="deleteModalCurso" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Eliminar Programa</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>¿Estás seguro de que deseas eliminar este programa?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-danger" id="deleteConfirmCurso">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
@@ -85,7 +126,7 @@
                         <div class="nav">
                             <a class="nav-link text-secondary mt-5" href="../views/curso.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
-                                Cursos
+                                Programas
                             </a>
                             <a class="nav-link  text-secondary mt-1" href="../views/tables.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
@@ -129,7 +170,7 @@
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src='../js/datatables-simple-demo.js'></script>
     <script src="../comunes/modal.js"></script>
-    <script src="../comunes/modal-editar.js"></script>
+   
 </body>
 </html>
 

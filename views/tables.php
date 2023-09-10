@@ -9,22 +9,13 @@ ob_start();
         <div class='title-content mb-4'>
             <h1 class='mt-4 text-center fs-3'>Administrar usuarios</h1>
         </div>
-            <div class='container-fluid px-3 mb-5'>
+            <div class='container-fluid px-3 mb-5 mt-5'>
                 <form action="../php/registro.php" method="post">
                     <div class='row'>
                         <div class='col col-lg-6'>
-                            <label for='tipoDocumento'>Tipo de documento*</label>
-                            <select class='form-select' name='tipo_documento' required>
-                                <option value=''>
-                                    Seleccione
-                                </option>
-                                <option value='Tarjeta de identidad'>
-                                    Tarjeta de identidad
-                                </option>
-                                <option value='Cedula de cuidadania'>
-                                    Cedula de cuidadania
-                                </option>
-                            </select>
+                        <?php 
+                            include '../php/item_2.php'; 
+                        ?>
                         </div>
                         <div class='col col-lg-6'>
                             <label for='numero_documento'>
@@ -82,18 +73,9 @@ ob_start();
                             />
                         </div>
                         <div class='col col-lg-6'>
-                            <label for='rol'>Rol*</label>
-                            <select class='form-select' name='rol' required>
-                                <option value=''>
-                                    Seleccione un rol
-                                </option>
-                                <option value='Aprendiz'>
-                                    Aprendiz
-                                </option>
-                                <option value='Instructor'>
-                                    Instructor
-                                </option>
-                            </select>
+                            <?php 
+                                include '../php/item_1.php'; 
+                            ?>
                         </div>
                         <div class='col col-lg-6'>
                             <label for='password'>
@@ -129,6 +111,7 @@ ob_start();
                 <table id="datatablesSimple">
                     <thead>
                         <tr>
+                            <th>#</th>
                             <th>Tipo de documento</th>
                             <th>Documento</th>
                             <th>Nombre</th>
@@ -136,7 +119,7 @@ ob_start();
                             <th>Correo</th>
                             <th>Teléfono</th>
                             <th>Rol</th>
-                            <th>Opciones</th> 
+                            <th>Acciones</th> 
                         </tr>
                     </thead>
                     <tbody>

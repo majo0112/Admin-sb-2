@@ -70,17 +70,37 @@ body.sb-nav-fixed {
 }
 
 .title-content h1 {
-    background-color: #4ca34b;
-    color: white !important;
+  
+    color: rgb(71, 71, 71) !important;
+    
 }   
   
 .btn-usuario {
-    background-color:#4ca34b !important;
+    background-color:#08ac04 !important;
     border:none !important;
 }
 
 .btn-usuario:hover {
-    background-color: #34a732 !important;
+    background-color: #0c8e0a !important;
+}
+
+.btn-cerrar {
+    background-color:#08ac04 !important;
+    border:none !important;
+}
+
+.btn-cerrar:hover {
+    background-color: #0c8e0a !important;
+}
+
+.btn-cancelar {
+    background-color: white !important;
+    color:#4e4e4e;
+}
+
+.btn-cancelar:hover {
+    background-color: #e2dfdf !important;
+    color:#4e4e4e;
 }
 
   main {
