@@ -2,7 +2,7 @@
 
 require_once "db.php";
 
-$query = "SELECT descripcion FROM sub_item WHERE id_item = 1"; 
+$query = "SELECT id, descripcion FROM sub_item WHERE id_item = 1"; 
 
 $result = $conn->query($query);
 

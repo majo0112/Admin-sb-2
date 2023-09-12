@@ -28,18 +28,7 @@ ob_start();
             echo "<div class='col col-lg-6'>";
             echo "<label for='tipo_documento'>Tipo de documento*</label>";
             echo "<select class='form-select' name='tipo_documento' required>";
-            echo "<option value=''>Seleccione</option>";
-            echo "<option value='Tarjeta de identidad'";
-            if ($row['tipo_documento'] == 'Tarjeta de identidad') {
-                echo " selected";
-            }
-            echo ">Tarjeta de identidad</option>";
-            echo "<option value='Cedula de cuidadania'";
-            if ($row['tipo_documento'] == 'Cedula de cuidadania') {
-                echo " selected";
-            }
-            echo ">Cedula de cuidadania</option>";
-            echo "</select>";
+            echo include '../comunes/item_2.php'; 
             echo"</div>";
 
             echo"<div class='col col-lg-6'>";

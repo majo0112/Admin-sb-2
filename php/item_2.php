@@ -2,12 +2,12 @@
 
 require_once "db.php";
 
-$query = "SELECT descripcion FROM sub_item WHERE id_item = 2"; 
+$query = "SELECT id, descripcion FROM sub_item WHERE id_item = 2"; 
 
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
-    echo "<label for='tipoDocumento'>Tipo de documento*</label>";
+    echo "<label for='tipo_documento'>Tipo de documento*</label>";
     echo "<select class='form-select' name='tipo_documento' required>";
     echo "<option value=''>Seleccione</option>";
 

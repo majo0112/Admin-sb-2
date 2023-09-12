@@ -25,21 +25,33 @@
 //Modal eliminar usuario
 
 document.addEventListener('DOMContentLoaded', function () {
-    const deleteButton = document.getElementById('deleteButton');
-    const userId = deleteButton.getAttribute('data-bs-user-id'); 
 
-    deleteButton.addEventListener('click', function () {
-        const deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
-        deleteModal.show();
+    const deleteButtons = document.querySelectorAll('.delete-button');
+    
+    deleteButtons.forEach(button => {
+
+        button.addEventListener('click', function () {
+            
+            const userId = this.getAttribute('data-bs-user-id');
+            
+            const deleteConfirmButton = document.getElementById('deleteConfirmButton');
+            deleteConfirmButton.setAttribute('data-bs-user-id', userId);
+            
+            const deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
+            deleteModal.show();
+        });
     });
-
+    
     const deleteConfirmButton = document.getElementById('deleteConfirmButton');
-
+    
     deleteConfirmButton.addEventListener('click', function () {
-        
+
+        const userId = this.getAttribute('data-bs-user-id');
+
         window.location.href = `../php/eliminar-usuario.php?id=${userId}`;
     });
 });
+
 
 
 //Modal eliminar curso
@@ -61,6 +73,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-
 
