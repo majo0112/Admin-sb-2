@@ -27,21 +27,22 @@
 document.addEventListener('DOMContentLoaded', function () {
     const deleteButtons = document.querySelectorAll('.deleteButton');
     const deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
-    const deleteConfirmCurso = document.getElementById('deleteConfirmCurso');
+    const deleteConfirmButton = document.getElementById('deleteConfirmButton');
 
     deleteButtons.forEach(deleteButton => {
         deleteButton.addEventListener('click', function () {
             const userId = deleteButton.getAttribute('data-bs-user-id');
-            deleteConfirmCurso.setAttribute('data-bs-user-id', userId);
+            deleteConfirmButton.setAttribute('data-bs-user-id', userId);
             deleteModal.show();
         });
     });
 
-    deleteConfirmCurso.addEventListener('click', function () {
+    deleteConfirmButton.addEventListener('click', function () {
         const userId = this.getAttribute('data-bs-user-id');
         window.location.href = `../php/eliminar-usuario.php?id=${userId}`;
     });
 });
+
 
 //Modal curso
 
@@ -52,14 +53,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     deleteButtons.forEach(deleteButton => {
         deleteButton.addEventListener('click', function () {
-            const userId = deleteButton.getAttribute('data-bs-user-id');
-            deleteConfirmCurso.setAttribute('data-bs-user-id', userId);
+            const cursoId = deleteButton.getAttribute('data-bs-curso-id');
+            deleteConfirmCurso.setAttribute('data-bs-curso-id', cursoId);
             deleteModal.show();
         });
     });
 
     deleteConfirmCurso.addEventListener('click', function () {
-        const userId = this.getAttribute('data-bs-user-id');
-        window.location.href = `../php/eliminar-curso.php?id=${userId}`;
+        const cursoId = this.getAttribute('data-bs-curso-id');
+        window.location.href = `../php/eliminar-curso.php?id=${cursoId}`;
     });
 });
