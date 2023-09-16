@@ -78,28 +78,27 @@
         </div>
         </div>
 
-
-        <!-- Modal delete usuario -->
-        <div class="modal" id="deleteModal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Eliminar Usuario</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <p>¿Estás seguro de que deseas eliminar este usuario?</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-danger" id="deleteConfirmButton">Eliminar</button>
+            <!-- Modal delete usuario -->
+            <div class="modal" id="deleteModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Eliminar Usuario</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>¿Estás seguro de que deseas eliminar este usuario?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-danger" id="deleteConfirmButton">Eliminar</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
             <!-- Modal delete curso -->
-        <div class="modal" id="deleteModalCurso" tabindex="-1">
+    <div class="modal" id="deleteModalCurso" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -115,8 +114,7 @@
                 </div>
             </div>
         </div>
-        </div>
-
+    </div>
 
         <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
@@ -182,7 +180,8 @@
 <script src="assets/demo/chart-bar-demo.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
 <script src='../js/datatables-simple-demo.js'></script>
-<script src="../comunes/modales.js"></script>
+<script src="../comunes/modal.js"></script>
+
    
 </body>
 </html>

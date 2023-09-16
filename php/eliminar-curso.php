@@ -1,32 +1,23 @@
-
 <?php
-session_start();
+require_once "db.php";
 
+if (isset($_GET['id']) && !empty($_GET['id'])) {
+    $userId = $_GET['id'];
 
-if (!isset($_SESSION['correo']) || empty($_SESSION['correo'])) {
-    header('Location: ../views/login.php');
-    exit;
-}
+    $sql = "DELETE FROM programa WHERE id = $userId";
 
-if (!isset($_GET['id']) || empty($_GET['id'])) {
+    if ($conn->query($sql) === TRUE) {
+        header('Location: ../views/curso.php?success=UserDeleted');
+        exit;
+    } else {
+        header('Location: ../views/curso.php?error=DeleteError');
+        exit;
+    }
+} else {
+    
     header('Location: ../views/curso.php?error=InvalidID');
     exit;
 }
 
-require_once "db.php";
-
-
-$userId = $_GET['id'];
-
-$sql = "DELETE FROM programa WHERE id = $userId";
-
-if ($conn->query($sql) === TRUE) {
-
-    header('Location: ../views/curso.php?success=UserDeleted');
-    exit;
-} else {
-
-    header('Location: ../views/curso.php?error=DeleteError');
-    exit;
-}
+$conn->close();
 ?>

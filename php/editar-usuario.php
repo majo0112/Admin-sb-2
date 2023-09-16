@@ -28,7 +28,20 @@ ob_start();
             echo "<div class='col col-lg-6'>";
             echo "<label for='tipo_documento'>Tipo de documento*</label>";
             echo "<select class='form-select' name='tipo_documento' required>";
-            echo include '../comunes/item_2.php'; 
+            echo"<option value=''>
+                        Seleccione 
+                    </option>";
+                    echo"<option value='3'>";
+                    if ($row['rol'] == '3') {
+                        echo "";
+                    }
+                    echo "Cédula de ciudadanía</option>";
+                    echo "<option value='4'";
+                    if ($row['rol'] == '4') {
+                        echo " seleccionado";
+                    }
+                    echo ">Tarjeta de identidad</option>";
+                    echo "</select>";
             echo"</div>";
 
             echo"<div class='col col-lg-6'>";
@@ -97,13 +110,13 @@ ob_start();
                     echo"<option value=''>
                         Seleccione un rol
                     </option>";
-                    echo"<option value='Aprendiz'>";
-                    if ($row['rol'] == 'Aprendiz') {
+                    echo"<option value='1'>";
+                    if ($row['rol'] == '1') {
                         echo "";
                     }
                     echo "Aprendiz</option>";
-                    echo "<option value='Instructor'";
-                    if ($row['rol'] == 'Instructor') {
+                    echo "<option value='2'";
+                    if ($row['rol'] == '2') {
                         echo " seleccionado";
                     }
                     echo ">Instructor</option>";
