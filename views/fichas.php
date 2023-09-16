@@ -19,7 +19,7 @@ ob_start();
                     </div>
                     <div class='col col-lg-6'>
                             <label for='ficha'>
-                                número de ficha*
+                                Número de ficha*
                             </label>
                             <input
                                 type='number'

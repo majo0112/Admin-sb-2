@@ -64,3 +64,25 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = `../php/eliminar-curso.php?id=${cursoId}`;
     });
 });
+
+
+//Modal ficha
+
+document.addEventListener('DOMContentLoaded', function () {
+    const deleteButtonsF = document.querySelectorAll('.deleteButtonF');
+    const deleteModalFicha = new bootstrap.Modal(document.getElementById('deleteModalFicha'));
+    const deleteConfirmFicha = document.getElementById('deleteConfirmFicha');
+
+    deleteButtonsF.forEach(deleteButtonF => {
+        deleteButtonF.addEventListener('click', function () {
+            const fichaId = deleteButtonF.getAttribute('data-bs-ficha-id');
+            deleteConfirmFicha.setAttribute('data-bs-ficha-id', fichaId);
+            deleteModalFicha.show();
+        });
+    });
+
+    deleteConfirmFicha.addEventListener('click', function () {  
+        const fichaId = this.getAttribute('data-bs-ficha-id');
+        window.location.href = `../php/eliminar-ficha.php?id=${fichaId}`;
+    });
+});

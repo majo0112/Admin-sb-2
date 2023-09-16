@@ -1,16 +1,13 @@
 <?php
-
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-   
-    $id_programa = $_POST["id_programa"];
+    
+    $id = $_POST["id"];
     $ficha = $_POST["ficha"]; 
     $alias = $_POST["alias"];
     $id_estado = $_POST["estado"];
 
     require_once "db.php";
-
-    $sql = "INSERT INTO fichas (id_programa, ficha, alias, estado) 
-    VALUES ('$id_programa', '$ficha', '$alias', '$id_estado')"; 
+    $sql = "UPDATE fichas SET ficha = '$ficha', alias = '$alias', estado = '$id_estado' WHERE id = $id";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: ../views/fichas.php");
@@ -21,4 +18,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $conn->close();
 }
-?>  
+?>
