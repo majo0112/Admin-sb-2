@@ -2,7 +2,7 @@
 
 require_once "db.php";
 
-$query = "SELECT id, descripcion FROM sub_item WHERE id = 5 OR id = 8"; 
+$query = "SELECT id, descripcion FROM sub_item WHERE id = 6 OR id = 7"; 
 
 $result = $conn->query($query);
 

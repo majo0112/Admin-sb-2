@@ -1,25 +1,30 @@
 <?php
 include '../comunes/permisos.php';
 
-$title = "SENA | Instructores";
+$title = "SENA | Aprendices";
 
 ob_start(); 
 ?>
     <div class='container-fluid px-4'>
     <div class='title-content mb-4'>
-        <h1 class='mt-4 text-center fs-3'>Asignar instructor</h1>
+        <h1 class='mt-4 text-center fs-3'>Asignar ficha a aprendices</h1>
     </div>
         <div class='container-fluid px-3 mb-5'>
-            <form action="../php/registro-instructor.php" method="post">
+            <form action="../php/registro-aprendiz.php" method="post">
                 <div class='row'>
                     <div class='col col-lg-6'>
                         <?php 
-                            include '../php/item_5.php'; 
+                            include '../php/item_7.php'; 
                         ?>
                     </div>
                     <div class='col col-lg-6'>
                         <?php 
                             include '../php/item_6.php'; 
+                        ?>
+                    </div>
+                    <div class='col col-lg-6'>
+                        <?php 
+                            include '../php/item_03.php'; 
                         ?>
                     </div>
                 </div>
@@ -39,21 +44,22 @@ ob_start();
     <div class="card mb-4">
         <div class="card-header">
             <i class="fas fa-table me-1"></i>
-            Instructores Asignados a Fichas
+            Aprendices 
         </div>
         <div class="card-body">
             <table id="datatablesSimple">
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Nombre de instructor</th>
-                        <th>Ficha</th> 
+                        <th>Nombre de aprendiz</th>
+                        <th>Ficha</th>
+                        <th>Estado</th>
                         <th>Acciones</th> 
                     </tr>
                 </thead>
                 <tbody>
                     <?php 
-                        include '../php/registro-de-instructor.php'; 
+                        include '../php/registro-de-aprendiz.php'; 
                     ?>
                 </tbody>
             </table>

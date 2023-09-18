@@ -1,13 +1,13 @@
 <?php
 include '../comunes/permisos.php';
 
-$title = "SENA | Editar ficha";
+$title = "SENA | Editar Programa";
 
 ob_start(); 
 ?>
 <div class='container-fluid px-4'>
     <div class='title-content mb-4'>
-        <h1 class='mt-4 text-center fs-3'>Editar Ficha</h1>
+        <h1 class='mt-4 text-center fs-3'>Editar Programa</h1>
     </div>
     <div class='container-fluid px-3 mb-5'>
         <?php
@@ -15,41 +15,29 @@ ob_start();
         $id = $_GET['id'];
 
         require_once "../php/db.php";
-        $sql = "SELECT * FROM fichas WHERE id = $id";
+        $sql = "SELECT * FROM programa WHERE id = $id";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
 
   
-            echo "<form method='POST' action='../php/actualizar-ficha.php'>";
+            echo "<form method='POST' action='../php/actualizar-curso.php'>";
             echo "<input type='hidden' name='id' value='{$row['id']}'>";
             echo"<div class='row'>";
             
 
             echo"<div class='col col-lg-6'>";
-            echo"<label for='ficha'>
-                Número de ficha*
+            echo"<label for='nombre_programa'>
+                Nombre de programa*
                 </label>";
             echo"<input
-                type='number'
-                name='ficha'
+                type='text'
+                name='nombre_programa'
                 class='form-control'
-                value='{$row['ficha']}'
+                value='{$row['nombre_programa']}'
                 required
                 />";
-            echo"</div>";
-            echo"<div class='col col-lg-6'>";
-            echo"<label for='alias'>
-                        Nombre*
-                    </label>";
-            echo"<input
-                        type='text'
-                        name='alias'
-                        class='form-control'
-                        value='{$row['alias']}'
-                        required
-                    />";
             echo"</div>";
             echo"<div class='col col-lg-6'>";
             echo "<label for='estado'>Estado*</label>";
@@ -84,7 +72,7 @@ ob_start();
             echo"</div";
 
         } else {
-            echo "No se encontró la ficha.";
+            echo "No se encontró programa.";
         }
 
         $conn->close();

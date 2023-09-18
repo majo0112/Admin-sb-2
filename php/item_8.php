@@ -2,13 +2,13 @@
 
 require_once "db.php";
 
-$query = "SELECT id, descripcion FROM sub_item WHERE id = 5 OR id = 8"; 
+$query = "SELECT id, descripcion FROM sub_item WHERE id_item = 4"; 
 
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
-    echo "<label for='estado'>Estado*</label>";
-    echo "<select class='form-select' name='estado' required>";
+    echo "<label for='asistencias'>Entrada/salida*</label>";
+    echo "<select class='form-select' name='asistencias' required>";
     echo "<option value=''>Seleccione</option>";
 
     while ($row = $result->fetch_assoc()) {

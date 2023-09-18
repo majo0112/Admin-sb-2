@@ -86,3 +86,25 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = `../php/eliminar-ficha.php?id=${fichaId}`;
     });
 });
+
+
+//Modal Aprendiz
+
+document.addEventListener('DOMContentLoaded', function () {
+    const deleteButtonsAprendiz = document.querySelectorAll('.deleteButtonAprendiz');
+    const deleteModalAprendiz = new bootstrap.Modal(document.getElementById('deleteModalAprendiz'));
+    const deleteConfirmAprendiz = document.getElementById('deleteConfirmAprendiz');
+
+    deleteButtonsAprendiz.forEach(deleteButtonAprendiz => {
+        deleteButtonAprendiz.addEventListener('click', function () {
+            const aprendizId = deleteButtonAprendiz.getAttribute('data-bs-aprendiz-id');
+            deleteConfirmAprendiz.setAttribute('data-bs-aprendiz-id', aprendizId);
+            deleteModalAprendiz.show();
+        });
+    });
+
+    deleteConfirmAprendiz.addEventListener('click', function () {  
+        const aprendizId = this.getAttribute('data-bs-aprendiz-id');
+        window.location.href = `../php/eliminar-aprendiz.php?id=${aprendizId}`;
+    });
+});

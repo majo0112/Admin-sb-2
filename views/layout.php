@@ -80,6 +80,10 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
                         Fichas
                     </a>
+                    <a class="nav-link  text-secondary mt-1" href="../views/aprendices.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                        Aprendices
+                    </a>
                     <a class="nav-link  text-secondary mt-1" href="../views/instructores.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
                         Instructores
@@ -127,7 +131,7 @@
 <script src="assets/demo/chart-bar-demo.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
 <script src='../js/datatables-simple-demo.js'></script>
-<script src="../comunes/modal.js"></script>
+<script src="../comunes/modales.js"></script>
 
    
 </body>
