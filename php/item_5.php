@@ -7,9 +7,9 @@ $query = "SELECT id, nombre, apellidos FROM register WHERE rol = 2";
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
-    echo "<label for='id_persona'>Instructor*</label>";
+    
     echo "<select class='form-select' name='id_persona' required>";
-    echo "<option value=''>Seleccione</option>";
+    echo "<option value=''disabled selected>Instructor*</option>";
 
     while ($row = $result->fetch_assoc()) {
         $id = $row['id']; 

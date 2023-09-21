@@ -7,9 +7,9 @@ $query = "SELECT id, nombre_programa FROM programa WHERE estado = 5";
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
-    echo "<label for='id_programa'>Programa*</label>";
-    echo "<select class='form-select' name='id_programa' required>";
-    echo "<option value=''>Seleccione</option>";
+    
+    echo "<select class='form-select' name='id_programa' required id='select-programa'>";
+    echo "<option value=''disabled selected>Programa*</option>";
 
     while ($row = $result->fetch_assoc()) {
         $id = $row['id']; 
@@ -22,4 +22,6 @@ if ($result->num_rows > 0) {
     echo "No se encontraron programas activos.";
 }
 
+
 ?>
+

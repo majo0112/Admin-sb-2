@@ -9,9 +9,9 @@ AND id IN (SELECT id_persona FROM aprendiz WHERE estado = 6);";
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
-    echo "<label for='id_persona'>Aprendiz*</label>";
+   
     echo "<select class='form-select' name='id_persona' required>";
-    echo "<option value=''>Seleccione</option>";
+    echo "<option value=''disabled selected>Aprendiz*</option>";
 
     while ($row = $result->fetch_assoc()) {
         $id = $row['id']; 

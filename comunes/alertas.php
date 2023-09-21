@@ -25,8 +25,20 @@ if (isset($_GET['error'])) {
     }
 
     if ($errorMessage !== "") {
-        echo '<div class="alert alert-light" role="alert">' . $errorMessage . '</div>';
+        echo '<div class="alert alert-danger" role="alert">
+             '. $errorMessage .'
+             </div>';
     }
 }
 
 ?>
+
+
+<script>
+if (window.location.search.indexOf('error=') > -1) {
+    setTimeout(function() {
+        window.location.href = window.location.href.split("?")[0]; 
+    }, 2000);
+}
+</script>
+

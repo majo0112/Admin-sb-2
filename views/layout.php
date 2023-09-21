@@ -8,10 +8,12 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <title><?php echo $title; ?></title>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+NYO3d6Fq5l/T5j97l2tD+bXB7f5LO3IBwq3vz5Cr4OJ2FjC" crossorigin="anonymous">
 <link href="../css/styles.css" rel="stylesheet" />
-<link href="../css/estilos.css" rel="stylesheet" />
+<link href="../css/estilo.css" rel="stylesheet" />
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
@@ -60,7 +62,7 @@
         </nav>
 
         <?php 
-            include '../comunes/modal.php'; 
+            include '../comunes/modales.php'; 
         ?>
 
         <div id="layoutSidenav">
@@ -68,6 +70,7 @@
         <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
             <div class="sb-sidenav-menu">
                 <div class="nav">
+                    
                     <a class="nav-link text-secondary mt-5" href="../views/curso.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
                         Programas
@@ -80,7 +83,7 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
                         Fichas
                     </a>
-                    <a class="nav-link  text-secondary mt-1" href="../views/aprendices.php">
+                    <a class="nav-link text-secondary mt-1" href="../views/aprendices.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
                         Aprendices
                     </a>
@@ -124,7 +127,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-4zjF5n5m8r5l5r5u6f5v5f5F5S5B5I5F5V5U5o5T5o5D5r5u5O5N5" crossorigin="anonymous"></script>
 <script src='../js/scripts.js'></script>
-<script src='../js/nava-link.js'></script>
+<script src='../js/nav-link.js'></script>
 <script src='../js/datatables.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
 <script src="assets/demo/chart-area-demo.js"></script>
@@ -132,8 +135,9 @@
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
 <script src='../js/datatables-simple-demo.js'></script>
 <script src="../comunes/modales.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script>
 
-   
+
 </body>
 </html>
 

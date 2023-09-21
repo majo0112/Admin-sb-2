@@ -1,5 +1,5 @@
 
-// NAVA-LINK
+// NAV-LINK
 
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll(".nav-link");

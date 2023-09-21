@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     VALUES ('$id_persona', '$id_ficha', '$id_estado')"; 
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: ../views/aprendices.php");
+        header("Location: ../views/aprendices.php?success=4");
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

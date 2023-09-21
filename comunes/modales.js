@@ -108,3 +108,47 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = `../php/eliminar-aprendiz.php?id=${aprendizId}`;
     });
 });
+
+//Modal Instructor
+
+document.addEventListener('DOMContentLoaded', function () {
+    const deleteButtonsInstructor = document.querySelectorAll('.deleteButtonInstructor');
+    const deleteModalInstructor = new bootstrap.Modal(document.getElementById('deleteModalInstructor'));
+    const deleteConfirmInstructor = document.getElementById('deleteConfirmInstructor');
+
+    deleteButtonsInstructor.forEach(deleteButtonInstructor => {
+        deleteButtonInstructor.addEventListener('click', function () {
+            const InstructorId = deleteButtonInstructor.getAttribute('data-bs-instructor-id');
+            deleteConfirmInstructor.setAttribute('data-bs-instructor-id', InstructorId);
+            deleteModalInstructor.show();
+        });
+    });
+
+    deleteConfirmInstructor.addEventListener('click', function () {  
+        const InstructorId = this.getAttribute('data-bs-instructor-id');
+        window.location.href = `../php/eliminar-instructor.php?id=${InstructorId}`;
+    });
+});
+
+
+//Modal Asistencia
+
+document.addEventListener('DOMContentLoaded', function () {
+    const deleteButtonsAsistencia = document.querySelectorAll('.deleteButtonAsistencia');
+    const deleteModalAsistencia = new bootstrap.Modal(document.getElementById('deleteModalAsistencia'));
+    const deleteConfirmAsistencia = document.getElementById('deleteConfirmAsistencia');
+
+    deleteButtonsAsistencia.forEach(deleteButtonAsistencia => {
+        deleteButtonAsistencia.addEventListener('click', function () {
+            const AsistenciaId = deleteButtonAsistencia.getAttribute('data-bs-asistencia-id');
+            deleteConfirmAsistencia.setAttribute('data-bs-asistencia-id', AsistenciaId);
+            deleteModalAsistencia.show();
+        });
+    });
+
+    deleteConfirmAsistencia.addEventListener('click', function () {  
+        const AsistenciaId = this.getAttribute('data-bs-asistencia-id');
+        window.location.href = `../php/eliminar-asistencia.php?id=${AsistenciaId}`;
+    });
+});
+

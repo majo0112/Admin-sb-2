@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     VALUES ('$tipo_documento', '$numero_documento','$nombre','$apellidos','$correo','$telefono','$rol', '$hashedPassword')";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: ../views/tables.php");
+        header("Location: ../views/tables.php?success=2");
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

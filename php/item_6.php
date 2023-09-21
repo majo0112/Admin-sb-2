@@ -7,9 +7,9 @@ $query = "SELECT id, alias FROM fichas";
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
-    echo "<label for='id_ficha'>Ficha*</label>";
+   
     echo "<select class='form-select' name='id_ficha' required>";
-    echo "<option value=''>Seleccione</option>";
+    echo "<option value=''disabled selected>Ficha*</option>";
 
     while ($row = $result->fetch_assoc()) {
         $id = $row['id']; 
