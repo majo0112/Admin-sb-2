@@ -4,7 +4,11 @@ include '../comunes/permisos.php';
 $title = "SENA | Registrar Programas";
 
 ob_start(); 
-?>
+?>  
+    <?php 
+        include '../comunes/preloader.php'; 
+    ?>
+
     <div class='container-fluid px-4'>
     <div class='title-content mb-4'>
         <h1 class='mt-4 text-center fs-3'>Registrar Programas</h1>

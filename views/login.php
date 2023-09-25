@@ -38,8 +38,9 @@
                             <div class="d-flex align-items-center justify-content-center mt-4 mb-0 ">
                                 <button type="submit" class="btn btn-success fs-5 w-100">Ingresar</button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-center mt-4 mb-0">
-                                <a class="small" href="password.html">¿Olvidaste tu contraseña?</a>
+                            <div class="alert alert-warning alert-dismissible fade show mt-4" role="alert">
+                            <strong>¿Problemas con tu usuario?</strong> Por favor contactanos en mail@gmail.com
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                         </form>
                     </div>
@@ -47,10 +48,10 @@
             </div>
             <div class="col-lg-6 mb-5" id="color-titulo">
                 <h2 class="text-center mb-3 fw-lighter fs-1">Bienvenido(a)</h2>
-                <h2 class="text-center mb-3 fw-lighter fs-1">al portal</h2>
-                <h2 class="text-center fw-bold mb-3 fs-1 bold-font ">EDUCATIVO</h2>
+                <h2 class="text-center mb-3 fw-lighter fs-1">al sistema</h2>
+                <h2 class="text-center fw-bold mb-3 fs-1 bold-font ">DE ASISTENCIAS</h2>
                 <div class="card-header text-center mt-5">
-                <img src="../assets/img/sofia-plus.png" alt="Logo" class="logo-sofia " style="width: 250px;">   
+                <img src="../assets/img/logo-app.png" alt="Logo" class="logo-app" style="width: 200px;">   
                 </div>
             </div>
         </div>

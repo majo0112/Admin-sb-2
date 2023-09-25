@@ -13,9 +13,9 @@
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+NYO3d6Fq5l/T5j97l2tD+bXB7f5LO3IBwq3vz5Cr4OJ2FjC" crossorigin="anonymous">
 <link href="../css/styles.css" rel="stylesheet" />
-<link href="../css/estilo.css" rel="stylesheet" />
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+<link href="../css/estilo-app.css" rel="stylesheet" />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Roboto:wght@300;200;100&display=swap" rel="stylesheet">
 <link rel="manifest" href="../assets/img/site.webmanifest">
@@ -27,7 +27,7 @@
 
 <nav class="sb-topnav navbar navbar-expand">
     <a class="navbar-brand ps-3" href="../views/index.php">
-    <img src="../assets/img/logo.png" alt="Logo" width="100" height="auto" class="ms-5">
+    <img src="../assets/img/logo-asis.png" alt="Logo" width="60" height="auto" class="ms-5">
     </a>  
     <!-- Sidebar Toggle-->
     <button class="btn btn-light btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!" style="color: #08ac04 ;"><i class="fas fa-bars"></i></button>
@@ -127,7 +127,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-4zjF5n5m8r5l5r5u6f5v5f5F5S5B5I5F5V5U5o5T5o5D5r5u5O5N5" crossorigin="anonymous"></script>
 <script src='../js/scripts.js'></script>
-<script src='../js/nav-link.js'></script>
+<script src='../js/nav.js'></script>
 <script src='../js/datatable.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
 <script src="assets/demo/chart-area-demo.js"></script>
