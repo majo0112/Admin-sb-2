@@ -85,7 +85,7 @@ ob_start();
                 </div>
                 <div class='col col-lg-6'>
                     <?php
-                    $queryEstado = "SELECT id, descripcion FROM sub_item WHERE id = 6 OR id = 7";
+                    $queryEstado = "SELECT id, descripcion FROM sub_item WHERE id = 6 OR id = 11";
                     $resultEstado = $conn->query($queryEstado);
 
                     if ($resultEstado->num_rows > 0) {

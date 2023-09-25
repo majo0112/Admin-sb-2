@@ -9,9 +9,13 @@ INNER JOIN fichas f ON i.id_ficha = f.id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+
+    $contador = 1 ;
+    
     while ($row = $result->fetch_assoc()) {
+
         echo "<tr>";
-        echo "<td>" . $row['id'] . "</td>";
+        echo "<td>" . $contador . "</td>";
         echo "<td>" . $row['nombre']  . ' ' . $row['apellidos'] . "</td>";
         echo "<td>" . $row['id_ficha'] . "</td>";
 
@@ -25,6 +29,7 @@ if ($result->num_rows > 0) {
         
         echo "</tr>";
         
+        $contador++;
     }
 } else {
     echo "<tr><td colspan='7'>No hay registros</td></tr>";

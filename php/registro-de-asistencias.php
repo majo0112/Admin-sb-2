@@ -11,9 +11,12 @@ INNER JOIN sub_item s ON a.asistencias = s.id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+
+    $contador = 1 ;
+    
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td>" . $row['id'] . "</td>";
+        echo "<td>" . $contador . "</td>";
         echo "<td>" . $row['nombre']  . ' ' . $row['apellidos'] . "</td>";
         echo "<td>" . $row['id_ficha'] . "</td>";
         echo "<td>" . $row['asistencias'] . "</td>";
@@ -27,6 +30,8 @@ if ($result->num_rows > 0) {
         echo "</td>";
         
         echo "</tr>";
+
+        $contador++;
         
     }
 } else {

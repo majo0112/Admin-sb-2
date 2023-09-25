@@ -128,7 +128,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-4zjF5n5m8r5l5r5u6f5v5f5F5S5B5I5F5V5U5o5T5o5D5r5u5O5N5" crossorigin="anonymous"></script>
 <script src='../js/scripts.js'></script>
 <script src='../js/nav-link.js'></script>
-<script src='../js/datatables.js'></script>
+<script src='../js/datatable.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
 <script src="assets/demo/chart-area-demo.js"></script>
 <script src="assets/demo/chart-bar-demo.js"></script>

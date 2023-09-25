@@ -8,9 +8,14 @@ LEFT JOIN sub_item s ON p.estado = s.id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+
+    $contador = 1 ;
+
     while ($row = $result->fetch_assoc()) {
+
+
         echo "<tr>";
-        echo "<td>" . $row['id'] . "</td>";
+        echo "<td>" . $contador . "</td>";
         echo "<td>" . $row['nombre_programa'] . "</td>";
         echo "<td>" . $row['estado'] . "</td>";
 
@@ -24,6 +29,8 @@ if ($result->num_rows > 0) {
         echo "</td>";
         
         echo "</tr>";
+
+        $contador++;
         
     }
 } else {

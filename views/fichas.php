@@ -37,7 +37,7 @@ ob_start();
                         </div>
                     <div class='col col-lg-6'>
                         <?php 
-                            include '../php/item_3.php'; 
+                            include '../php/item_03.php'; 
                         ?>
                     </div>
                 </div>
