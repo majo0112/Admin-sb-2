@@ -9,14 +9,17 @@
         <title>Login</title>
         <link href="../css/styles.css" rel="stylesheet" />
         <link href="../css/estilos.css" rel="stylesheet" />
-        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
         <link rel="manifest" href="../assets/img/site.webmanifest">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
-            <body class="login-page background-container">
+    <body class="login-page background-container">
+    <?php 
+        include '../comunes/preloader.php'; 
+    ?>
             <main>
     <div class="container">
         <div class="row justify-content-between align-items-center" style="height: 100vh;">
@@ -59,7 +62,8 @@
 </main>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>            
+        <script src="js/scripts.js"></script>   
+        <script src='../js/nav.js'></script>         
     </body>
 </html>
 

@@ -1,7 +1,7 @@
 <?php
 include '../comunes/permisos.php';
 
-$title = "SENA | Registrar Fichas";
+$title = "ASISPLUS | Registrar Fichas";
 
 ob_start(); 
 ?>

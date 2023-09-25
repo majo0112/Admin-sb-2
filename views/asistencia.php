@@ -1,7 +1,7 @@
 <?php
 include '../comunes/permisos.php';
 
-$title = "SENA | Asistencia";
+$title = "ASISPLUS | Asistencia";
 
 ob_start(); 
 ?>

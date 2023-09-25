@@ -5,6 +5,9 @@ $title = "SENA | Editar ficha";
 
 ob_start(); 
 ?>
+<?php 
+        include '../comunes/preloader.php'; 
+?>
 <div class='container-fluid px-4'>
     <div class='title-content mb-4'>
         <h1 class='mt-4 text-center fs-3'>Editar Ficha</h1>
