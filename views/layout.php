@@ -65,13 +65,21 @@
             include '../comunes/modales.php'; 
         ?>
 
+        <?php 
+            include '../comunes/modal-justificar.php'; 
+        ?>
+
+
         <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
         <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
             <div class="sb-sidenav-menu">
                 <div class="nav">
-                    
-                    <a class="nav-link text-secondary mt-5" href="../views/curso.php">
+                    <a class="nav-link  text-secondary mt-5" href="../views/reporte.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                        Reportes
+                    </a>
+                    <a class="nav-link text-secondary mt-1" href="../views/curso.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
                         Programas
                     </a>
@@ -123,7 +131,7 @@
         </footer>
     </div>
 </div>
-
+<script src="../comunes/exportar-excel.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-4zjF5n5m8r5l5r5u6f5v5f5F5S5B5I5F5V5U5o5T5o5D5r5u5O5N5" crossorigin="anonymous"></script>
 <script src='../js/scripts.js'></script>
@@ -135,8 +143,10 @@
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
 <script src='../js/datatables-simple-demo.js'></script>
 <script src="../comunes/modales.js"></script>
+<script src="../comunes/modal-justificar.js"></script>
+<script src="../comunes/excel.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
 
 </body>
 </html>

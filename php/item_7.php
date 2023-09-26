@@ -7,7 +7,7 @@ $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
     echo"<div class='card mb-4'>";
-    echo"<div class='card-header'>";
+    echo"<div class='card-header text-center'>";
     echo"Listado de aprendices"; 
     echo"</div>";
     echo "<div class='card-body'>";

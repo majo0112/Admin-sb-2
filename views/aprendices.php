@@ -10,7 +10,7 @@ ob_start();
     ?>
     <div class='container-fluid px-4'>
     <div class='title-content mb-4'>
-        <h1 class='mt-4 text-center fs-3'>Asignar aprendices a fichas</h1>
+        <h1 class='mt-4 text-center fs-3'>Ingresar Aprendiz</h1>
     </div>
         <div class='container-fluid px-3 mb-5'>
             <form action="../php/registro-aprendiz.php" method="post">
@@ -38,7 +38,7 @@ ob_start();
                         <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                         </svg>
-                            Registrar
+                            Agregar
                         </button>
                     </center> 
                 </div>
@@ -48,8 +48,7 @@ ob_start();
             include '../comunes/alerta-success.php';
         ?>
     <div class="card mb-4">
-        <div class="card-header">
-            <i class="fas fa-table me-1"></i>
+        <div class="card-header text-center">
             Aprendices 
         </div>
         <div class="card-body">
@@ -70,6 +69,18 @@ ob_start();
                 </tbody>
             </table>
         </div>
+    </div>
+
+    <div class="mb-4">
+        <center>
+        <input type="file" id="fileInput" accept=".xlsx, .xls" style="display:none;">
+        <button id="importButton" class="btn btn-success">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin-right: 10px" fill="currentColor" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
+        <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2z"/>
+        </svg>
+            Importar aprendices desde Excel
+        </button>
+        </center>
     </div>
                    
 

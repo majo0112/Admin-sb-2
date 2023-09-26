@@ -12,7 +12,7 @@ ob_start();
     
     <div class='container-fluid px-4'>
         <div class='title-content mb-4'>
-            <h1 class='mt-4 text-center fs-3'>Administrar usuarios</h1>
+            <h1 class='mt-4 text-center fs-3'>Crear nuevo usuario</h1>
         </div>
             <div class='container-fluid px-3 mb-5 mt-5'>
                 <form action="../php/registro.php" method="post">
@@ -99,9 +99,8 @@ ob_start();
                 include '../comunes/alerta-success.php';
             ?>
         <div class="card mb-4">
-            <div class="card-header">
-                <i class="fas fa-table me-1"></i>
-                Usuarios registrados
+            <div class="card-header text-center">
+                Usuarios
             </div>
             <div class="card-body">
                 <table id="datatablesSimple">
