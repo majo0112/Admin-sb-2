@@ -4,7 +4,6 @@ require_once "db.php";
 $correo = $_POST['correo'];
 $password = $_POST['password'];
 
-
 $correo = $conn->real_escape_string($correo);
 $password = $conn->real_escape_string($password);
 

@@ -8,7 +8,7 @@
         <meta name="author" content="" />
         <title>Login</title>
         <link href="../css/styles.css" rel="stylesheet" />
-        <link href="../css/estilos.css" rel="stylesheet" />
+        <link href="../css/estilo-views.css" rel="stylesheet" />
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="theme-color" content="#ffffff">
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
@@ -30,18 +30,18 @@
                         include '../comunes/alertas.php';
                         ?>
                         <form action="../php/validacion.php" method="post">
-                            <div class="form-floating mb-3 text-secondary">
+                            <div class="form-floating mb-3 text-secondary fs-6">
                                 <input class="form-control" id="inputEmail" type="email" name="correo" placeholder="name@example.com" />
                                 <label for="inputEmail">Correo*</label>
                             </div>
-                            <div class="form-floating mb-3  text-secondary">
+                            <div class="form-floating mb-3  text-secondary fs-6">
                                 <input class="form-control" id="inputPassword" type="password" name="password" placeholder="Password" />
                                 <label for="inputPassword">Contraseña*</label>
                             </div>
                             <div class="d-flex align-items-center justify-content-center mt-4 mb-0 ">
-                                <button type="submit" class="btn btn-success fs-5 w-100">Ingresar</button>
+                            <button type="submit" class="btn btn-success btn-login fs-6 w-100">Ingresar</button>
                             </div>
-                            <div class="alert alert-warning alert-dismissible fade show mt-4" role="alert">
+                            <div class="alert alert-warning alert-dismissible fade show mt-4 fs-6" role="alert">
                             <strong>¿Problemas con tu usuario?</strong> Por favor contactanos en mail@gmail.com
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
@@ -54,7 +54,7 @@
                 <h2 class="text-center mb-3 fw-lighter fs-1">al sistema</h2>
                 <h2 class="text-center fw-bold mb-3 fs-1 bold-font ">DE ASISTENCIAS</h2>
                 <div class="card-header text-center mt-5">
-                <img src="../assets/img/logo-app.png" alt="Logo" class="logo-app" style="width: 200px;">   
+                <img src="../assets/img/logo-api.png" alt="Logo" class="logo-app" style="width: 200px;">   
                 </div>
             </div>
         </div>

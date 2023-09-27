@@ -1,14 +1,6 @@
 <div class="preloader">
-        <img src="../assets/img/logo-app.png" alt="Tu Logo" class="logo">
-        <div class="spinners">
-            <div class="spinner-grow text-success" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-            <div class="spinner-grow text-success" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-            <div class="spinner-grow text-success" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-        </div>
+    <img src="../assets/img/logo-api.png" alt="Tu Logo" class="logo">
+    <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
     </div>
+</div>

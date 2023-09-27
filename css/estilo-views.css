@@ -1,4 +1,3 @@
-
 body.sb-nav-fixed {
     font-family: 'Roboto', sans-serif;
   }
@@ -11,9 +10,12 @@ body.sb-nav-fixed {
   
   
   .sb-topnav {
-      background-color: #08ac04;
-      height: 65px !important; 
-    }
+    background-color: rgba(102, 16, 242, 0.9); 
+    height: 65px !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); 
+    border-bottom: 1px  #4e4e4e; 
+}
+
      
     .sb-topnav .nav-link {
       color: white;
@@ -36,7 +38,7 @@ body.sb-nav-fixed {
     }
     
     .sb-topnav .dropdown-item:hover {
-      background-color: #08ac04;
+      background-color: #6610f2;
       color:white;
     }
     
@@ -49,7 +51,7 @@ body.sb-nav-fixed {
   
  
   .sb-sidenav .nav-link:hover {
-    background-color: #08ac04;
+    background-color: #6610f2;
     color: white !important; 
     font-weight: bold;
   }
@@ -59,7 +61,7 @@ body.sb-nav-fixed {
   }
   
   .sb-nav-link-icon {
-    color: #08ac04 !important;
+    color: #6610f2 !important;
   }
   
   
@@ -67,10 +69,12 @@ body.sb-nav-fixed {
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-left: 38px ;
-    padding: -10px;
+    margin-left: 30px ;
+    
   }
+
   
+
   .title-content h1 {
   
     color: rgb(71, 71, 71) !important;
@@ -78,7 +82,7 @@ body.sb-nav-fixed {
   }   
   
   .btn-usuario {
-    background-color:#08ac04 !important;
+    background-color:#6610f2 !important;
     border:none !important;
     width: 140px;
     height: 45px;
@@ -88,9 +92,29 @@ body.sb-nav-fixed {
     border-radius: 10px;
   }
 
+  .btn-login {
+    background-color:#6610f2 !important;
+    border:none !important;
+  }
+
+  .btn-login:hover {
+    background-color: #7932eb !important;
+  }
+
+  
+.form-floating input:focus {
+    border-color: #6610f2;  
+    outline: none;
+    box-shadow: none; 
+}
+
+
+
+
+
   .btn-editar {
 
-    background-color:#08ac04 !important;
+    background-color:#6610f2 !important;
     border:none !important;
     width: 200px;
     height: 45px;
@@ -101,11 +125,11 @@ body.sb-nav-fixed {
   }
   
   .btn-usuario:hover {
-    background-color: #0c8e0a !important;
+    background-color: #732ae9 !important;
   }
   
   .btn-cerrar {
-    background-color:#08ac04 !important;
+    background-color:#6610f2 !important;
     border:none !important;
   }
   
@@ -132,12 +156,12 @@ body.sb-nav-fixed {
   
   .container-fluid h1 {
     margin-top: 20px; 
-    color: #08ac04;   
+    color: #191919;   
   }
   
   .container-fluid h2 {
     margin-top: 30px; 
-    color: #08ac04;
+    color: rgba(33, 37, 41, 0.75);;
   }
 
 body {
@@ -163,6 +187,7 @@ body {
 }
 
 
+
 .logo {
     max-width: 200px; 
     margin-bottom: 20px; 
@@ -177,7 +202,3 @@ body {
 .spinner-grow {
     margin: 0 5px; 
 }
-
-
-
-  
