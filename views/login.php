@@ -11,15 +11,13 @@
         <link href="../css/estilo-views.css" rel="stylesheet" />
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="theme-color" content="#ffffff">
-        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favico-16x16.png">
         <link rel="manifest" href="../assets/img/site.webmanifest">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="login-page background-container">
-    <?php 
-        include '../comunes/preloader.php'; 
-    ?>
+    
             <main>
     <div class="container">
         <div class="row justify-content-between align-items-center" style="height: 100vh;">

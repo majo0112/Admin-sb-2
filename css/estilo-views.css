@@ -20,6 +20,7 @@ body.sb-nav-fixed {
     .sb-topnav .nav-link {
       color: white;
       font-weight: bold;
+
     }
     
     .sb-topnav .nav-link span {
@@ -195,7 +196,7 @@ body.sb-nav-fixed {
   }
   
   .btn-cerrar:hover {
-    background-color: #0c8e0a !important;
+    background-color: #732ae9  !important;
   }
   
   .btn-cancelar {

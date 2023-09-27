@@ -11,7 +11,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     VALUES ('$nombre_programa', '$estado_id')"; 
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: ../views/curso.php?success=1");
+
+        $_SESSION['successMessage'] = "¡Registro exitoso!";
+        $_SESSION['successCase'] = 1; 
+        header("Location: ../views/curso.php");
+        
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

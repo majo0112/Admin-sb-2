@@ -9,6 +9,8 @@ ob_start();
         include '../comunes/preloader.php'; 
     ?>
 
+   
+
     <div class='container-fluid px-4'>
     <div class='title-content mb-4'>
         <h1 class='mt-4 text-left fs-4'>Crear nuevo Programa</h1>
@@ -44,9 +46,6 @@ ob_start();
                 </div>
             </form>
         </div>
-            <?php
-                include '../comunes/alerta-success.php';
-            ?>
     <div class="cont-table mb-4">
        
         <table id="datatablesSimple">

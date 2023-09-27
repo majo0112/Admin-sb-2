@@ -16,13 +16,13 @@ ob_start();
             <form action="" method="post">
                 <div class='row'>
 
-                    <div class='col col-lg-6 mb-4 mx-auto text-center'>
+                    <div class='col col-lg-6 mt-4 mx-auto text-center'>
                         <?php 
                             include '../php/item_6.php'; 
                         ?>
                     </div>
                 </div>
-                <div class='mt-2'>
+                <div class='mt-4'>
                     <center>
                         <button type='submit' class='btn btn-success btn-sm btn-reporte fs-7'>
                             Obtener reporte

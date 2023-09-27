@@ -16,7 +16,7 @@
 <link href="../css/estilo-views.css" rel="stylesheet" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favico-16x16.png">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Roboto:wght@300;200;100&display=swap" rel="stylesheet">
 <link rel="manifest" href="../assets/img/site.webmanifest">
 <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -27,7 +27,7 @@
 
 <nav class="sb-topnav navbar navbar-expand">
     <a class="navbar-brand ps-3" href="../views/index.php">
-    <img src="../assets/img/logo-asis.png" alt="Logo" width="100" height="auto" class="ms-5">
+    <img src="../assets/img/logo-app.png" alt="Logo" width="67" height="auto" class="ms-5">
     </a>  
     <!-- Sidebar Toggle-->
     <button class="btn btn-light btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!" style="color: #6610f2  ;"><i class="fas fa-bars"></i></button>

@@ -13,12 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         MAX(CASE WHEN a.asistencias = 9 THEN a.hora END) AS entrada,
         MAX(CASE WHEN a.asistencias = 10 THEN a.hora END) AS salida,
         MAX(a.fecha) AS fecha,
-        CASE WHEN MAX(a.asistencias) IS NOT NULL THEN 'Asistió' ELSE 'No Asistió' END AS asistencias,     
-        (SELECT COUNT(DISTINCT fecha) FROM asistencia WHERE id_persona = r.id AND id_ficha = '$id_ficha' AND asistencias NOT IN (9, 10)) AS inasistencias
-        FROM register r
-        LEFT JOIN asistencia a ON r.id = a.id_persona
-        WHERE r.rol = 1 AND a.id_ficha = '$id_ficha'
-        GROUP BY r.id";
+        CASE WHEN MAX(a.asistencias) IS NOT NULL THEN 'Asistió' ELSE 'No Asistió' END AS asistencias,
+        SUM(CASE WHEN a.asistencias IS NULL THEN 1 ELSE 0 END) AS inasistencias
+    FROM register r
+    LEFT JOIN asistencia a ON r.id = a.id_persona AND a.id_ficha = '$id_ficha'
+    WHERE r.rol = 1
+    GROUP BY r.id";
 
 $result = $conn->query($sql);
 

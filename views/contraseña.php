@@ -10,17 +10,17 @@ ob_start();
     ?>
     <div class='container-fluid px-4'>
         <div class='title-content'>
-            <h1 class='mt-4 password-center text-center mb-4'>Cambiar Contraseña</h1>
+            <h1 class='mt-4 text-left fs-4'>Cambiar Contraseña</h1>
         </div>
-        <div class='card mb-4 row'>
-            <div class='card-body'>
+        <div class='mb-4 row'>
+            <div class='container-fluid px-3 mb-5 cont-ficha'>
                     <?php
 
                     include '../comunes/alertas.php';
                     ?>
                 <form action="../php/cambiar_contraseña.php" method="post">
                     <div class='row'>
-                        <div class='col col-lg-6 mb-4'>
+                        <div class='col col-lg-6 mt-5'>
                             <input
                                 type='password'
                                 name='contraseña_actual'
@@ -29,7 +29,7 @@ ob_start();
                                 required
                             />
                         </div>
-                        <div class='col col-lg-6 mb-4'>
+                        <div class='col col-lg-6 mt-5'>
                             <input
                                 type='password'
                                 name='nueva_contraseña'
@@ -38,7 +38,7 @@ ob_start();
                                 required
                             />
                         </div>
-                        <div class='col col-lg-6 mb-4'>
+                        <div class='col col-lg-6 mt-4'>
                             <input
                                 type='password'
                                 name='confirmar_contraseña'
@@ -47,7 +47,7 @@ ob_start();
                                 required
                             />
                         </div>
-                        <div class='col col-lg-6'>     
+                        <div class='col col-lg-6 mt-4'>     
                             <button type='submit' class='btn btn-success btn-usuario'>Cambiar</button>                                    
                         </div>
                     </div>             
