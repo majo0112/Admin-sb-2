@@ -10,35 +10,35 @@ ob_start();
     ?>
     <div class='container-fluid px-4'>
     <div class='title-content mb-4'>
-        <h1 class='mt-4 text-center fs-3'>Crear nueva Ficha</h1>
+        <h1 class='mt-4 text-left fs-4'>Crear nueva Ficha</h1>
     </div>
-        <div class='container-fluid px-3 mb-5'>
+        <div class='container-fluid px-3 mb-5 cont-ficha'>
             <form action="../php/registro-ficha.php" method="post">
                 <div class='row'>
-                    <div class='col col-lg-6'>
+                    <div class='col col-lg-6 mt-4'>
                         <?php 
                             include '../php/item_4.php'; 
                         ?>
                     </div>
-                    <div class='col col-lg-6 mb-4'>
+                    <div class='col col-lg-6 mt-4'>
                             <input
                                 type='number'
                                 name='ficha'
-                                class='form-control'
+                                class='form-control form-control-sm' aria-label='Small select example'
                                 placeholder='Número de ficha*'
                                 required
                             />
                     </div>
-                    <div class='col col-lg-6 mb-4'>
+                    <div class='col col-lg-6 mt-4'>
                             <input
                                 type='text'
                                 name='alias'
-                                class='form-control'
+                                class='form-control form-control-sm' aria-label='Small select example'
                                 placeholder='Alias*'
                                 required
                             />
                         </div>
-                    <div class='col col-lg-6'>
+                    <div class='col col-lg-6 mt-4'>
                         <?php 
                             include '../php/item_03.php'; 
                         ?>
@@ -60,30 +60,24 @@ ob_start();
         <?php
             include '../comunes/alerta-success.php';
         ?>
-    <div class="card mb-4">
-        <div class="card-header">
-            <i class="fas fa-table me-1"></i>
-            Fichas
-        </div>
-        <div class="card-body">
-            <table id="datatablesSimple">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Programa</th>
-                        <th>Ficha</th> 
-                        <th>Alias</th>
-                        <th>Estado</th>
-                        <th>Acciones</th> 
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php 
-                        include '../php/registro-de-ficha.php'; 
-                    ?>
-                </tbody>
-            </table>
-        </div>
+    <div class="cont-table mb-4">
+        <table id="datatablesSimple">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Programa</th>
+                    <th>Ficha</th> 
+                    <th>Alias</th>
+                    <th>Estado</th>
+                    <th>Acciones</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <?php 
+                    include '../php/registro-de-ficha.php'; 
+                ?>
+            </tbody>
+        </table>      
     </div>
                    
 

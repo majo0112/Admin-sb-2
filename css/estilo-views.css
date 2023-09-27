@@ -85,12 +85,42 @@ body.sb-nav-fixed {
     background-color:#6610f2 !important;
     border:none !important;
     width: 140px;
-    height: 45px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 4px;
   }
+
+    
+  .btn-reporte {
+    background-color:#6610f2 !important;
+    border:none !important;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+  .btn-importar {
+    background-color:#6610f2 !important;
+    border:none !important;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+  .form-select:focus, .form-control:focus  {
+    border-color: none; 
+    outline: none; 
+    box-shadow: none;
+}
+
 
   .btn-login {
     background-color:#6610f2 !important;
@@ -109,9 +139,6 @@ body.sb-nav-fixed {
 }
 
 
-
-
-
   .btn-editar {
 
     background-color:#6610f2 !important;
@@ -123,9 +150,43 @@ body.sb-nav-fixed {
     align-items: center;
     border-radius: 10px;
   }
+
+
+  .btn-just {
+
+    background-color:#6610f2 !important;
+    border:none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+
+  .btn-borrar {
+
+    background-color:#6610f2 !important;
+    border:none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+  .btn-edit {
+
+    background-color:#8a47f6 !important;
+    border:none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
   
-  .btn-usuario:hover {
-    background-color: #732ae9 !important;
+  .btn-usuario:hover,
+  .btn-importar:hover,
+  .btn-reporte:hover {
+      background-color: #732ae9 !important;
   }
   
   .btn-cerrar {
@@ -202,3 +263,59 @@ body {
 .spinner-grow {
     margin: 0 5px; 
 }
+
+.cont-form {
+    background-color: #eff2f7;
+    height: 150px;
+}
+
+.cont-usuario {
+    background-color: #eff2f7;
+    height: 300px;
+}
+
+.cont-ficha {
+    background-color: #eff2f7;
+    height: 195px;
+}
+
+.cont-instructor {
+    background-color: #eff2f7;
+    height: 155px;
+}
+
+
+
+
+
+/* Estilos personalizados para DataTable */
+
+#datatablesSimple,
+#datatablesSimple1,
+#datatablesSimple2 {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: white;
+}
+
+#datatablesSimple th,
+#datatablesSimple td,
+#datatablesSimple1 th,
+#datatablesSimple1 td,
+#datatablesSimple2 th,
+#datatablesSimple2 td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+    border: none;
+}
+
+#datatablesSimple th,
+#datatablesSimple1 th,
+#datatablesSimple2 th {
+    color: #777;
+}
+
+
+

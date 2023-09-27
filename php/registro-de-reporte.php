@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
 
         echo "<td>";
         echo "<center>";
-        echo "<button type='button' class='btn btn-success btn-sm' data-bs-toggle='modal' data-bs-target='#certificadoModal' data-bs-user-id='{$row['numero_documento']}'>Justificar</button>";
+        echo "<button type='button' class='btn btn-success btn-sm btn-just fs-7' data-bs-toggle='modal' data-bs-target='#certificadoModal' data-bs-user-id='{$row['numero_documento']}'>Justificar</button>";
         echo "</center>";
         echo "</td>";
         

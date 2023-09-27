@@ -61,6 +61,12 @@ $writer->save($filename);
 $conn->close();
 
 if (isset($id_ficha)) {
-    echo '<a href="' . $filename . '" download>Descargar Reporte Excel</a>';
+
+    echo'<div class="d-flex justify-content-end">';
+    echo "<button type='submit' class='btn btn-success btn-sm btn-reporte fs-7'>";
+    echo '<a href="' . $filename . '" download style="text-decoration: none; color: inherit;">Descargar Excel-XLSX </a>';
+    echo "</button>";
+    echo '</div>';
 }
+
 ?>

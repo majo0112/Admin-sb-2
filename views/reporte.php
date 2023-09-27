@@ -10,21 +10,21 @@ ob_start();
     ?>
     <div class='container-fluid px-4'>
     <div class='title-content mb-4'>
-        <h1 class='mt-4 text-center fs-3'>Reportes</h1>
+        <h1 class='mt-4 text-left fs-4'>Reportes</h1>
     </div>
-        <div class='container-fluid px-3 mb-5'>
+        <div class='container-fluid px-3 mb-5 cont-form'>
             <form action="" method="post">
                 <div class='row'>
 
-                    <div class='col col-lg-6 mb-4'>
+                    <div class='col col-lg-6 mb-4 mx-auto text-center'>
                         <?php 
                             include '../php/item_6.php'; 
                         ?>
                     </div>
                 </div>
-                <div class='mt-4'>
+                <div class='mt-2'>
                     <center>
-                        <button type='submit' class='btn btn-success btn-usuario'>
+                        <button type='submit' class='btn btn-success btn-sm btn-reporte fs-7'>
                             Obtener reporte
                         </button>
                     </center>
@@ -34,12 +34,9 @@ ob_start();
         <?php
             include '../comunes/alerta-success.php';
         ?>
-    <div class="card mb-4">
-        <div class="card-header text-center ">
-            Reporte de asistencias
-        </div>
-        <div class="card-body">
-            <table id="datatablesSimple">
+    <div class="cont-table mb-4">
+        <div>
+            <table id="datatablesSimple"  class="table">
                 <thead>
                     <tr>
                         <th>#</th>

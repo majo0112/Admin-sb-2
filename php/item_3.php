@@ -8,7 +8,7 @@ $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
     
-    echo "<select class='form-select' name='estado' required>";
+    echo "<select class='form-select form-select-sm mt-4' aria-label='Small select example' name='estado' required>";
     echo "<option value=''disabled selected>Estado*</option>";
  
     while ($row = $result->fetch_assoc()) {
